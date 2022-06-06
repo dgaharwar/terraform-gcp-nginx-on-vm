@@ -17,7 +17,7 @@ resource "google_compute_instance" "app" {
     access_config {}
   }
 
-  //metadata_startup_script = data.template_file.startup.rendered
+  metadata_startup_script = data.template_file.startup.rendered
 }
 
 data "template_file" "startup" {
