@@ -1,5 +1,5 @@
 variable "project" {
-  default = "unknown"
+  default = "Project2"
   type    = string
 }
 
@@ -14,8 +14,8 @@ variable "credential" {
   type        = string
 }
 
-variable "tpl_file" {
-  description = "bash script executed at startup"
-  default     = "unknown.tpl"
-  type        = string
-}
+//variable "tpl_file" {
+//  description = "bash script executed at startup"
+//  default     = "unknown.tpl"
+//  type        = string
+//}
