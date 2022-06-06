@@ -11,13 +11,13 @@ provider "google" {
   credentials = file(var.credential)
 
   project = var.project
-  region  = "asia-southeast2"
-  zone    = "asia-southeast2-a"
+  region  = "aus-central1"
+  zone    = "us-central1-b"
 }
 
 module "vm" {
   source     = "../"
-  project    = "high-fuze-767"
+  project    = "Project2"
   app_name   = "use-modules"
   credential = "../../credential.json"
   tpl_file   = "apache.tpl"
